@@ -26,8 +26,8 @@
     ],
     "require": {
         "php": ">=7.0",
-        "illuminate/support": "^5.5|^6.0|^7.0|^8.0",
-        "bigbluebutton/bigbluebutton-api-php": "^2.0"
+        "iamdorsa/bigbluebutton-api-php": "master",
+        "illuminate/support": "^5.5|^6.0|^7.0|^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
@@ -69,5 +69,19 @@
                 "Bigbluebutton": "JoisarJignesh\\Bigbluebutton\\Facades\\Bigbluebutton"
             }
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "iamdorsa/bigbluebutton-api-php",
+                "version": "master",
+                "source": {
+                    "url": "https://github.com/iamdorsa/bigbluebutton-api-php.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
 }
